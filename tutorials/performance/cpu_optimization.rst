@@ -226,7 +226,7 @@ SceneTree
 Although Nodes are an incredibly powerful and versatile concept, be aware that
 every node has a cost. Built-in functions such as `_process()` and
 `_physics_process()` propagate through the tree. This housekeeping can reduce
-performance when you have very large numbers of nodes (usually in the thousands).
+performance when you have very large numbers of nodes (usually in the tens of thousands, but depending on your platform).
 
 Each node is handled individually in the Godot renderer. Therefore, a smaller
 number of nodes with more in each can lead to better performance.
